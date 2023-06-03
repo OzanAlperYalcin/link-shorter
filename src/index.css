@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply bg-green-500 hover:bg-green-400 rounded-xl p-1 text-sm font-medium text-white transition-all ease-linear duration-300
+    }
+}
+
+@layer base {
+    html, body {
+        height: 100%;
+        background-color: #f4f4f5;
+    }
+}
