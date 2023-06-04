@@ -29,7 +29,7 @@ function SectionInput({ queryState, setLinkData, setQrImage }) {
                 const data = await fetchData(query)
                 if (data) {
                     setLinkData(data)
-                    setQrImage(import.meta.env.VITE_QR_API+query)
+                    setQrImage(import.meta.env.VITE_QR_API + query)
                 }
             }
         } catch (err) {
@@ -40,7 +40,7 @@ function SectionInput({ queryState, setLinkData, setQrImage }) {
     return (
         <>
             {loading && <Loading />}
-            <Alert status={(submitError || error)} style={{backgroundColor: '#ef4444'}}>
+            <Alert status={(submitError || error)} style={{ backgroundColor: '#ef4444' }}>
                 Link Girmelisiniz!
             </Alert>
             <form onSubmit={(e) => submitHandle(e)} className='flex flex-col items-center gap-2.5'>
